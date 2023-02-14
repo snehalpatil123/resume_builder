@@ -143,15 +143,9 @@ const MyResumes = (props) => {
                     key={index}>
                     <Item id={`${index}ITEM`}>
                       {getTemplate(resume, index)}
-                      <BlackScreen />
+                      <BlackScreen/>
                       <div className="use-template-btn-cont">
                         <Button
-                          // sx={{
-                          //   position: "relative",
-                          //   top: "-35vh",
-                          //   left: "0px",
-                          //   transform: "inherit",
-                          // }}
                           className="use-template-btn"
                           onClick={() => {
                             downloadResume(index);

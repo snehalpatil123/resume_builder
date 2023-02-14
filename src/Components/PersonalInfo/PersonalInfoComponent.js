@@ -37,7 +37,9 @@ const PersonalInfoComponent = (props) => {
 
   //Block the popup notification when no profile image selected
   const [imgSnackbar, setImgSnackbar] = useState(false);
+  // eslint-disable-next-line
   const [vertical, setVertical] = useState("bottom");
+  // eslint-disable-next-line
   const [horizontal, setHorizontal] = useState("centre");
 
   const {
@@ -49,6 +51,7 @@ const PersonalInfoComponent = (props) => {
   const [img, setImg] = useState(
     props.personalInfo.profileImg.length ? props.personalInfo.profileImg : ""
   );
+  // eslint-disable-next-line
   const [sotreImage, setSotreImage] = useState([]);
 
   const [open, setOpen] = useState(false);

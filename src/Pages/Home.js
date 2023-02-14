@@ -43,7 +43,7 @@ const Home = (props) => {
               gridTemplateColumns: {
                 sm: "1fr 1fr",
                 md: "1fr 1fr",
-                lg: "1fr 1fr 0.3fr",
+                lg: "1fr 1fr 1fr",
                 xl: "1fr 1fr 1fr 1fr",
               },
               gridGap: "30px",
@@ -52,11 +52,12 @@ const Home = (props) => {
               return (
                 <Box key={template.id} id="template" className="templates-img-cont">
                   <img
+                    style={{width:"75%"}}
                     className="template-img"
                     src={template.template_img}
                     alt={template.template_name}
                   />
-                  <BlackScreen />
+                  <BlackScreen/>
                   <Button
                     className="use-template-btn"
                     onClick={() => navigateToFillDetails(template.id)}
