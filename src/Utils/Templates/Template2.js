@@ -1,6 +1,6 @@
 import { Container, Paper } from "@mui/material";
 import React from "react";
-import "./Template2.css";
+import "./Template.css";
 import TemplateHeader from "../../Components/Header/TemplateHeader";
 import TemplateHeading from "../../Components/Heading/TemplateHeading";
 import { data } from "../Data/data";

@@ -1,3 +1,4 @@
+
 .template-header {
   width: 100%;
   display: flex;
@@ -63,7 +64,8 @@
 
 .template-user-about {
   font-size: 12px;
-  padding: 0px 24px 10px;
+  padding: 0px 0px 10px;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {
