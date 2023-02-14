@@ -3,16 +3,17 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import EmailIcon from "@mui/icons-material/Email";
-import { Box } from "@mui/system";
+import { Box } from "@mui/material";
 import Navbar from "../Components/MainBar/Navbar";
+import aboutCV from "../Utils/Images/aboutCV.jpg"
+import Instagram   from "@mui/icons-material/Instagram";
 
 export default function ButtonMUI() {
   return (
     <>
       <Navbar />
       <Stack p={{ xs: "15px", sm: "25px", md: "40px", lg: "60px " }}>
-        <h2 className="template-header-title">Resume Builder</h2>
+        <h2 className="template-header-title">Resume-Builder</h2>
         <Stack
           className="midContainer"
           direction={{
@@ -38,24 +39,21 @@ export default function ButtonMUI() {
               },
               textAlign: "justify"
             }}>
-            Resume Builder offers free, HR-approved resume templates to help you
-            create a professional resume in minutes. Choose from some of the selected templates that can land you to your dream job.
-            Create an account to save your progress and multiple
-            versions, plus download as a PDF.Resume Builder offers free,
-            HR-approved resume templates to help you create a professional
-            resume in minutes. Choose from several template options and even
-            pre-populate a resume from your LinkedIn profile. Create an account
-            to save your progress and multiple versions, plus download as a
-            PDF.Resume Builder offers free, HR-approved resume templates to help
-            you create a professional resume in minutes. Choose from several
-            template options and even pre-populate a resume from your LinkedIn
-            profile. Create an account to save your progress and multiple
-            versions, plus download as a PDF.
+            Resume@Builder is a free web application where you can build your resume instantly.
+            Create a professional resume in minutes with ample of templates available.
+            You can also upload profile avatar to the resumes. Once you have filled the resume  fields, you get 
+            a preview and download option. Click downloadto have it to your local hard drive.
+            You can update your resumes which you have created earlier and delete them too.
           </Typography>
-          <Stack>
+          <Stack
+          sx={{
+            width: "30%",
+            placeSelf:"center",
+          }}>
             <img
-              src="https://media.istockphoto.com/vectors/people-vector-illustration-flat-cartoon-character-landing-page-vector-id1137470880?k=20&m=1137470880&s=612x612&w=0&h=G12BhLwmpqRaSnBY0S9SiJ1Ia1Ao5PjrLX1Y98KZ1vE="
+              src={aboutCV}
               alt="img"
+              // style={{width:"20%", height:"10%"}}
             />
           </Stack>
         </Stack>
@@ -71,14 +69,18 @@ export default function ButtonMUI() {
               fontWeight: "400",
               color: "dark",
             }}>
-            Share with your friends
+           Kindly Share in your circle
           </Typography>
           <Box className="icons">
-            <LinkedInIcon
+            <Instagram
+              sx={{ fontSize: "40px", paddingLeft: "15px" }}
+              color="error"
+            />
+            <FacebookOutlinedIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="primary"
             />
-            <FacebookOutlinedIcon
+            <LinkedInIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="primary"
             />
@@ -89,10 +91,6 @@ export default function ButtonMUI() {
             <TwitterIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="info"
-            />
-            <EmailIcon
-              sx={{ fontSize: "40px", paddingLeft: "15px" }}
-              color="error"
             />
           </Box>
         </Box>

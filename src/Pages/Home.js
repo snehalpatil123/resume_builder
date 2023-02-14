@@ -62,7 +62,8 @@ const Home = (props) => {
                     className="use-template-btn"
                     onClick={() => navigateToFillDetails(template.id)}
                     size="medium"
-                    variant="contained">
+                    variant="contained"
+                    color="secondary">
                     Use Template
                   </Button>
                 </Box>
