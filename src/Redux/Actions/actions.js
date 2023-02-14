@@ -1,5 +1,8 @@
 import * as actionTypes from "./actionTypes";
 
+//types of actions are defined which triggers from the view and change the state/props via store help
+//store is  centralization of all the states.
+
 export const selectTemplate = (id) => ({
   type: actionTypes.SELECTTEMPLATE,
   payload: id,

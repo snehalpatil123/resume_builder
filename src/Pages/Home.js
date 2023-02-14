@@ -25,6 +25,8 @@ const Home = (props) => {
   };
 
   // console.log(props.selectedTemplateId);
+
+  //setting the navbar active link so to identify on which tab/page you are at.
   
   return (
     <>

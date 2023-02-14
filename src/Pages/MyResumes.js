@@ -21,6 +21,9 @@ import {
 } from "../Redux/Actions/actions";
 import { useNavigate } from "react-router-dom";
 
+
+//in this page we are storing the details in the local storage in JSON format (key,value) so that after creating Resume we can retrieve them.
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,

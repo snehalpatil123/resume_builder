@@ -8,6 +8,8 @@ import Navbar from "../Components/MainBar/Navbar";
 import aboutCV from "../Utils/Images/aboutCV.jpg"
 import Instagram   from "@mui/icons-material/Instagram";
 
+// the briefing of the website  nothing much only an overview of the resume@builder
+
 export default function ButtonMUI() {
   return (
     <>

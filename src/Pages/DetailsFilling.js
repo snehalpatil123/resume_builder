@@ -8,6 +8,9 @@ import PreviewComponent from "../Components/Preview/PreviewComponent";
 import WorkExperienceComponent from "../Components/WorkExperience/WorkExperienceComponent";
 import "./Styles/DetailsFilling.css";
 
+
+// As soon as details are filled for particular categories/sections browser moves further to next fields if ! then same place
+
 const DetailsFilling = (props) => {
   const [tab, setTab] = useState(0);
 
