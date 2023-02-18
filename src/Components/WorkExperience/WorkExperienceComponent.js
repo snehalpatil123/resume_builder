@@ -1,10 +1,10 @@
-import { Button, Divider, MenuItem, Paper, Select } from "@mui/material";
-import React, {  useState } from "react";
 import "./WorkExperienceComponent.css";
-import { connect } from "react-redux";
-import BackNextBtnComponent from "../BackNextBtn/BackNextBtnComponent";
-import { addAllExperience, addExperience } from "../../Redux/Actions/actions";
+import React, {  useState } from "react";
 import { useForm, Controller } from "react-hook-form";
+import { Button, Divider, MenuItem, Paper, Select } from "@mui/material";
+import BackNextBtnComponent from "../BackNextBtn/BackNextBtnComponent";
+import { connect } from "react-redux";
+import { addAllExperience, addExperience } from "../../Redux/Actions/actions";
 import InputComponent from "../Input/InputComponent";
 import SelectComponent from "../Select/SelectComponent";
 

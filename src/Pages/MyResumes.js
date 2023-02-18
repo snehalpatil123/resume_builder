@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "../Components/MainBar/Navbar";
 import "./Styles/MyResumes.css";
-import { Button } from "@mui/material";
-import BlackScreen from "../Components/BlackScreen/BlackScreen";
-import { templates } from "../Utils/Data/templates";
-import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
-import { Box } from "@mui/system";
-import Grid from "@mui/material/Grid";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Button,Box} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import JsPDF from "jspdf";
+import Grid from "@mui/material/Grid";
+import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
 import { connect } from "react-redux";
+import { templates } from "../Utils/Data/templates";
+import {Navbar,BlackScreen} from  './';
 import {
   addAllExperience,
   addEducation,
@@ -19,7 +18,6 @@ import {
   selectResume,
   selectTemplate,
 } from "../Redux/Actions/actions";
-import { useNavigate } from "react-router-dom";
 
 
 //in this page we are storing the details in the local storage in JSON format (key,value) so that after creating Resume we can retrieve them.

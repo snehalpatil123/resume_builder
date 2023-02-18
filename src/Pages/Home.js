@@ -1,11 +1,9 @@
-import React from "react";
-import Navbar from "../Components/MainBar/Navbar";
 import "./Styles/Home.css";
-import { templates } from "../Utils/Data/templates";
-import BlackScreen from "../Components/BlackScreen/BlackScreen";
 import { Box, Button, Stack } from "@mui/material";
-import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { connect } from "react-redux";
+import {Navbar,BlackScreen} from  './';
+import { templates } from "../Utils/Data/templates";
 import { selectTemplate } from "../Redux/Actions/actions";
 
 const mapStateToProps = (state) => ({

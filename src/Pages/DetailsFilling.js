@@ -1,15 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "../Components/MainBar/Navbar";
-import DetailFillingSidebar from "../Components/DetailFillingSidebar/DetailFillingSidebar";
-import EducationComponent from "../Components/Education/EducationComponent";
-import KeySkillsComponent from "../Components/KeySkills/KeySkillsComponent";
-import PersonalInfoComponent from "../Components/PersonalInfo/PersonalInfoComponent";
-import PreviewComponent from "../Components/Preview/PreviewComponent";
-import WorkExperienceComponent from "../Components/WorkExperience/WorkExperienceComponent";
+import {Navbar,DetailFillingSidebar,EducationComponent,KeySkillsComponent, PersonalInfoComponent,PreviewComponent,WorkExperienceComponent} from  './';
 import "./Styles/DetailsFilling.css";
 
-
-// As soon as details are filled for particular categories/sections browser moves further to next fields if ! then same place
+// As soon as details are filled for particular categories/sections browser moves further to next fields if ! then same field on same page
 
 const DetailsFilling = (props) => {
   const [tab, setTab] = useState(0);

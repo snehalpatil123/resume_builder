@@ -1,12 +1,11 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography,Box } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { Box } from "@mui/material";
-import Navbar from "../Components/MainBar/Navbar";
-import aboutCV from "../Utils/Images/aboutCV.jpg"
 import Instagram   from "@mui/icons-material/Instagram";
+import {Navbar} from "./";
+import aboutCV from "../Utils/Images/aboutCV.jpg"
 
 // the briefing of the website  nothing much only an overview of the resume@builder
 
