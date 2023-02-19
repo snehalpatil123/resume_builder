@@ -89,21 +89,23 @@ export default function ButtonMUI() {
             />
             </Link>
 
-            <Link to="https://www.instagram.com"></Link>
+            <Link to="https://www.linkedin.com/in/kamran51/"></Link>
             <LinkedInIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="primary"
             />
-            <Link to="https://www.linkedin.com/in/kamran51/"></Link>
+            <Link to="https://web.whatsapp.com">
             <WhatsAppIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="success"
             />
-            <Link to="https://www.twitter.com"></Link>
+            </Link>
+            <Link to="https://www.twitter.com">
             <TwitterIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="info"
             />
+            </Link>
              <Link to="https://github.com/mekams/">
             <GitHub sx={{ fontSize: "40px", paddingLeft: "15px", color:"black" }} />
              </Link>
