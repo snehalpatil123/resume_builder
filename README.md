@@ -132,6 +132,7 @@
 * Set profile picture in the resume.
 * Before downloading we have a preview option to view your resume.
 * You can save resumes to the local hard drive.
+* Saved resumes can be deleted as well as modified by the user.
 
 ## Used in this project:
 * React-Router-Dom
