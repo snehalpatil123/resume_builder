@@ -169,7 +169,9 @@
 
 *__LIVE LINK__* <br/>
 <b> https://resumebuilderx.vercel.app/ </b>
+
 </hr>
+
 *__Demo Video__* </br>
 <b>https://youtu.be/oQF8RQA-X4c</b>
 
