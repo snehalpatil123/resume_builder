@@ -1,4 +1,4 @@
-##Resume-builder (Almabetter__Capstone__Project)
+## Resume-builder (Almabetter__Capstone__Project)
 
 # Introduction
 * Resume builder is a web application where anyone can create resume with ease and different available templates.
