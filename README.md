@@ -22,6 +22,6 @@
 * Raw data
 
 ## Pages
-* Home (Resume Templates) <br/> -Choose one from the available templates ;&amp <br/> -Navigated to details filling page 
+* Home (Resume Templates) <br/> -Choose one from the available templates &amp; <br/> -Navigated to details filling page 
 * My Resumes
 * About us
