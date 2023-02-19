@@ -128,6 +128,7 @@ const PersonalInfoComponent = (props) => {
   // getting windows width
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
+    console.log(innerHeight, innerWidth)
     return { innerWidth, innerHeight };
   };
 
@@ -174,8 +175,8 @@ const PersonalInfoComponent = (props) => {
           </BootstrapDialogTitle>
           <DialogContent>
             <Avatar1
-              width={windowSize.innerWidth > 900 && 400}
-              height={windowSize.innerWidth > 500 ? 400 : 150}
+              width={windowSize.innerWidth > 900 ? 200 : 150}
+              height={windowSize.innerHeight > 500 ? 200 : 50}
               onCrop={onCrop}
               onClose={onClose}
             />
