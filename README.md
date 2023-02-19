@@ -167,7 +167,7 @@
 - *About us*
 <img width="1119" alt="image" src="https://user-images.githubusercontent.com/100461901/219925057-16f85fe1-6aa1-416f-9d88-6040e04faae0.png">
 
-*__LIVE LINK__* <br/>
+*__Live Link__* <br/>
 <b> https://resumebuilderx.vercel.app/ </b>
 
 </hr>
