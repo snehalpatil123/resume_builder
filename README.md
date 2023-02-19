@@ -1,4 +1,4 @@
-# Resume-builder (AlmaBetter__Capstone__Project)
+# Resume-Builder (AlmaBetter__Capstone__Project)
 
 ## Folder Structure
 +---public
