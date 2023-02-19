@@ -75,6 +75,7 @@ const MyResumes = (props) => {
     return TemplateComp;
   };
 
+//delete resume
   const deleteResume = (resume) => {
     let resumes = window.localStorage.getItem("resumes");
 
@@ -92,7 +93,7 @@ const MyResumes = (props) => {
     const report = new JsPDF("portrait", "pt", "a4");
     report.html(document.getElementById(`${id}report`)).then(() => {
       report.save(`resume.pdf`);
-      // // console.log(resumes)
+      // console.log(resumes)
     });
   };
 

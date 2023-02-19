@@ -3,7 +3,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { GitHub } from "@mui/icons-material";
 import Instagram   from "@mui/icons-material/Instagram";
+import { Link } from "react-router-dom";
 import {Navbar} from "./";
 import aboutCV from "../Utils/Images/aboutCV.jpg"
 
@@ -73,26 +75,38 @@ export default function ButtonMUI() {
            Kindly Share in your circle
           </Typography>
           <Box className="icons">
+          <Link to="https://www.instagram.com">
             <Instagram
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="error"
             />
+              </Link>
+         
+              <Link to="https://www.facebook.com">
             <FacebookOutlinedIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="primary"
             />
+            </Link>
+
+            <Link to="https://www.instagram.com"></Link>
             <LinkedInIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="primary"
             />
+            <Link to="https://www.linkedin.com/in/kamran51/"></Link>
             <WhatsAppIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="success"
             />
+            <Link to="https://www.twitter.com"></Link>
             <TwitterIcon
               sx={{ fontSize: "40px", paddingLeft: "15px" }}
               color="info"
             />
+             <Link to="https://github.com/mekams/">
+            <GitHub sx={{ fontSize: "40px", paddingLeft: "15px", color:"black" }} />
+             </Link>
           </Box>
         </Box>
       </Stack>

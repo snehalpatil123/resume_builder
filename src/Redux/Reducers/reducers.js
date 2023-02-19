@@ -1,5 +1,3 @@
-import * as actionTypes from "../Actions/actionTypes";
-
 //Initial values declared  to the reducer
 
 const initialSelectedTemplateState = {
@@ -57,9 +55,9 @@ export const selectedTemplateReducer = (
   action
 ) => {
   switch (action.type) {
-    case actionTypes.SELECTTEMPLATE:
+    case action.SELECTTEMPLATE:
       return { ...state, selectedTemplateId: action.payload };
-    case actionTypes.SELECTRESUME:
+    case action.SELECTRESUME:
       return { ...state, selectedResumeId: action.payload };
     default:
       return state;
@@ -71,7 +69,7 @@ export const personalInfoReducer = (
   action
 ) => {
   switch (action.type) {
-    case actionTypes.ADDPERSONALINFO:
+    case action.ADDPERSONALINFO:
       return {
         ...state,
         personalInfo: { ...state.personalInfo, ...action.payload },
@@ -86,12 +84,12 @@ export const workExperienceReducer = (
   action
 ) => {
   switch (action.type) {
-    case actionTypes.ADDEXPERIENCE:
+    case action.ADDEXPERIENCE:
       return {
         ...state,
         experiences: [...state.experiences, action.payload],
       };
-    case actionTypes.ADDALLEXPERIENCE:
+    case action.ADDALLEXPERIENCE:
       return {
         ...state,
         experiences: action.payload,
@@ -103,15 +101,15 @@ export const workExperienceReducer = (
 
 export const keySkillsReducer = (state = initialSkillsState, action) => {
   switch (action.type) {
-    case actionTypes.ADDNEWSKILLS:
+    case action.ADDNEWSKILLS:
       return { ...state, skills: [...state.skills, ""] };
-    case actionTypes.EDITSKILL: {
+    case action.EDITSKILL: {
       return {
         ...state,
         skills: action.payload,
       };
     }
-    case actionTypes.DELETESKILL: {
+    case action.DELETESKILL: {
       const newSkills = state.skills.filter(
         (skill, id) => id !== action.payload
       );
@@ -128,7 +126,7 @@ export const educationDetailsReducer = (
   action
 ) => {
   switch (action.type) {
-    case actionTypes.ADDEDUCATION:
+    case action.ADDEDUCATION:
       return { ...state, educationInfo: action.payload };
     default:
       return state;

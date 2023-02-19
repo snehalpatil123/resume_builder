@@ -1,49 +1,47 @@
-import * as actionTypes from "./actionTypes";
-
 //types of actions are defined which triggers from the view and change the state/props via store help
 //store is  centralization of all the states.
 
 export const selectTemplate = (id) => ({
-  type: actionTypes.SELECTTEMPLATE,
+  type: "SELECTTEMPLATE",
   payload: id,
 });
 
 export const selectResume = (id) => ({
-  type: actionTypes.SELECTRESUME,
+  type: "SELECTRESUME",
   payload: id,
 });
 
 export const addPersonalInfo = (details) => ({
-  type: actionTypes.ADDPERSONALINFO,
+  type: "ADDPERSONALINFO",
   payload: details,
 });
 
 export const addExperience = (experience) => ({
-  type: actionTypes.ADDEXPERIENCE,
+  type: "ADDEXPERIENCE",
   payload: experience,
 });
 
 export const addAllExperience = (experiences) => ({
-  type: actionTypes.ADDALLEXPERIENCE,
+  type: "ADDALLEXPERIENCE",
   payload: experiences,
 });
 
 export const addNewSkills = () => ({
-  type: actionTypes.ADDNEWSKILLS,
+  type: "ADDNEWSKILLS",
   payload: null,
 });
 
 export const editSkill = (skills) => ({
-  type: actionTypes.EDITSKILL,
+  type: "EDITSKILL",
   payload: skills,
 });
 
 export const deleteSkill = (id) => ({
-  type: actionTypes.DELETESKILL,
+  type: "DELETESKILL",
   payload: id,
 });
 
 export const addEducation = (details) => ({
-  type: actionTypes.ADDEDUCATION,
+  type: "ADDEDUCATION",
   payload: details,
 });
