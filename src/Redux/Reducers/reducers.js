@@ -55,9 +55,9 @@ export const selectedTemplateReducer = (
   action
 ) => {
   switch (action.type) {
-    case action.SELECTTEMPLATE:
+    case "SELECTTEMPLATE":
       return { ...state, selectedTemplateId: action.payload };
-    case action.SELECTRESUME:
+    case "SELECTRESUME":
       return { ...state, selectedResumeId: action.payload };
     default:
       return state;
@@ -69,7 +69,7 @@ export const personalInfoReducer = (
   action
 ) => {
   switch (action.type) {
-    case action.ADDPERSONALINFO:
+    case "ADDPERSONALINFO":
       return {
         ...state,
         personalInfo: { ...state.personalInfo, ...action.payload },
@@ -84,12 +84,12 @@ export const workExperienceReducer = (
   action
 ) => {
   switch (action.type) {
-    case action.ADDEXPERIENCE:
+    case "ADDEXPERIENCE":
       return {
         ...state,
         experiences: [...state.experiences, action.payload],
       };
-    case action.ADDALLEXPERIENCE:
+    case "ADDALLEXPERIENCE":
       return {
         ...state,
         experiences: action.payload,
@@ -101,15 +101,15 @@ export const workExperienceReducer = (
 
 export const keySkillsReducer = (state = initialSkillsState, action) => {
   switch (action.type) {
-    case action.ADDNEWSKILLS:
+    case "ADDNEWSKILLS":
       return { ...state, skills: [...state.skills, ""] };
-    case action.EDITSKILL: {
+    case "EDITSKILL": {
       return {
         ...state,
         skills: action.payload,
       };
     }
-    case action.DELETESKILL: {
+    case "DELETESKILL": {
       const newSkills = state.skills.filter(
         (skill, id) => id !== action.payload
       );
@@ -126,7 +126,7 @@ export const educationDetailsReducer = (
   action
 ) => {
   switch (action.type) {
-    case action.ADDEDUCATION:
+    case "ADDEDUCATION":
       return { ...state, educationInfo: action.payload };
     default:
       return state;
