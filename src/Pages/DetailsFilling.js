@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import {Navbar,DetailFillingSidebar,EducationComponent,KeySkillsComponent, PersonalInfoComponent,PreviewComponent,WorkExperienceComponent} from  './';
+import {
+  Navbar,
+  DetailFillingSidebar,
+  EducationComponent,
+  KeySkillsComponent,
+  PersonalInfoComponent,
+  PreviewComponent,
+  WorkExperienceComponent,
+} from "./";
 import "./Styles/DetailsFilling.css";
 
 // As soon as details are filled for particular categories/sections browser moves further to next fields if ! then same field on same page

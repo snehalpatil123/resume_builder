@@ -1,7 +1,7 @@
 import "./Styles/MyResumes.css";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button,Box} from "@mui/material";
+import { Button, Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import JsPDF from "jspdf";
@@ -9,7 +9,7 @@ import Grid from "@mui/material/Grid";
 import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
 import { connect } from "react-redux";
 import { templates } from "../Utils/Data/templates";
-import {Navbar,BlackScreen} from  './';
+import { Navbar, BlackScreen } from "./";
 import {
   addAllExperience,
   addEducation,
@@ -18,7 +18,6 @@ import {
   selectResume,
   selectTemplate,
 } from "../Redux/Actions/actions";
-
 
 //in this page we are storing the details in the local storage in JSON format (key,value) so that after creating Resume we can retrieve them.
 
@@ -78,7 +77,7 @@ const MyResumes = (props) => {
     return TemplateComp;
   };
 
-//delete resume
+  //delete resume
   const deleteResume = (resume) => {
     let resumes = window.localStorage.getItem("resumes");
 
@@ -136,7 +135,8 @@ const MyResumes = (props) => {
             container
             justifyContent="center"
             alignItems="center"
-            className="grid">
+            className="grid"
+          >
             {resumes.length >= 1 ? (
               resumes.map((resume, index) => {
                 return (
@@ -145,10 +145,11 @@ const MyResumes = (props) => {
                     className={`resume `}
                     id={`${index}resume`}
                     margin={2}
-                    key={index}>
+                    key={index}
+                  >
                     <Item id={`${index}ITEM`}>
                       {getTemplate(resume, index)}
-                      <BlackScreen/>
+                      <BlackScreen />
                       <div className="use-template-btn-cont">
                         <Button
                           className="use-template-btn"
@@ -156,7 +157,8 @@ const MyResumes = (props) => {
                             downloadResume(index);
                           }}
                           size="medium"
-                          variant="contained">
+                          variant="contained"
+                        >
                           Download
                         </Button>
                         <Button
@@ -165,14 +167,16 @@ const MyResumes = (props) => {
                             deleteResume(resume);
                           }}
                           size="medium"
-                          variant="contained">
+                          variant="contained"
+                        >
                           Delete
                         </Button>
                         <Button
                           className="use-template-btn"
                           onClick={() => navigateToFillDetails(resume)}
                           size="medium"
-                          variant="contained">
+                          variant="contained"
+                        >
                           Edit Template
                         </Button>
                       </div>
