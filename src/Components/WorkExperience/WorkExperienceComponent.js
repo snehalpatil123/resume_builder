@@ -6,10 +6,12 @@ import { connect } from "react-redux";
 import { addAllExperience, addExperience } from "../../Redux/Actions/actions";
 import {BackNextBtnComponent,SelectComponent,InputComponent} from "../../Pages/index";
 
+//mapStateToProps is used for selecting the part of the data from the store that the connected component needs
 const mapStateToProps = (state) => ({
   experiences: state.workExperienceReducer.experiences,
 });
 
+// mapDispatchToProps allows you to specify which actions your component might need to dispatch
 const mapDispatchToProps = (dispatch) => ({
   setExperience: (experience) => dispatch(addExperience(experience)),
   setAllExperience: (experiences) => dispatch(addAllExperience(experiences)),
