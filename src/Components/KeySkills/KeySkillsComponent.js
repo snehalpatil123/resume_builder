@@ -1,12 +1,11 @@
-import { Paper, Divider, Button } from "@mui/material";
-import React, { useState } from "react";
-import InputComponent from "../Input/InputComponent";
 import "./KeySkillsComponent.css";
-import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
-import BackNextBtnComponent from "../BackNextBtn/BackNextBtnComponent";
-import { connect } from "react-redux";
-import { addNewSkills, deleteSkill, editSkill } from "../../Redux/Actions/actions";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Paper, Divider, Button } from "@mui/material";
+import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
+import { connect } from "react-redux";
+import {BackNextBtnComponent,InputComponent} from "../../Pages/index";
+import { addNewSkills, deleteSkill, editSkill } from "../../Redux/Actions/actions";
 
 const mapStateToProps = (state) => ({
   skills: state.keySkillsReducer.skills,

@@ -1,6 +1,6 @@
-import { Container } from "@mui/system";
-import React from "react";
 import "./TemplateOneExperienceComponent.css";
+import React from "react";
+import { Container } from "@mui/material";
 
 const TemplateOneExperienceComponent = (props) => {
   return (

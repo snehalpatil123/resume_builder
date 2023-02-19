@@ -1,6 +1,6 @@
-import { FormControl, FormHelperText } from "@mui/material";
-import React from "react";
 import "./SelectComponent.css";
+import React from "react";
+import { FormControl, FormHelperText } from "@mui/material";
 
 const SelectComponent = (props) => {
   return (

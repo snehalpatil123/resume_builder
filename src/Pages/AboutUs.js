@@ -43,7 +43,7 @@ export default function ButtonMUI() {
             Resume@Builder is a free web application where you can build your resume instantly.
             Create a professional resume in minutes with ample of templates available.
             You can also upload profile avatar to the resumes. Once you have filled the resume  fields, you get 
-            a preview and download option. Click downloadto have it to your local hard drive.
+            a preview and download option. Click download to have it to your local hard drive.
             You can update your resumes which you have created earlier and delete them too.
           </Typography>
           <Stack

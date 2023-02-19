@@ -7,6 +7,7 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
+  Box 
 } from "@mui/material";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
@@ -16,7 +17,6 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { Box } from "@mui/material";
 
 const ITEM_HEIGHT = 48;
 

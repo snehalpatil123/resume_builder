@@ -1,9 +1,7 @@
 import { Divider, MenuItem, Paper, Select } from "@mui/material";
 import React, { useState } from "react";
 import "./EducationComponent.css";
-import BackNextBtnComponent from "../BackNextBtn/BackNextBtnComponent";
-import InputComponent from "../Input/InputComponent";
-import SelectComponent from "../Select/SelectComponent";
+import {BackNextBtnComponent,SelectComponent,InputComponent} from "../../Pages/index";
 import { connect } from "react-redux";
 import { addEducation } from "../../Redux/Actions/actions";
 import { useForm, Controller } from "react-hook-form";

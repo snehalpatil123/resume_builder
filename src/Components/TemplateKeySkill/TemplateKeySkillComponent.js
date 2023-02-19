@@ -1,6 +1,6 @@
-import { Container } from "@mui/system";
-import React from "react";
 import "./TemplateKeySkillComponent.css";
+import { Container } from "@mui/material";
+import React from "react";
 
 const TemplateKeySkillComponent = (props) => {
   return (

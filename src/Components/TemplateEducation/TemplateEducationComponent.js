@@ -1,5 +1,5 @@
-import React from "react";
 import "./TemplateEducationComponent.css";
+import React from "react";
 
 const TemplateEducationCompnent = (props) => {
   return (

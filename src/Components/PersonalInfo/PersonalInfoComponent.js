@@ -1,8 +1,7 @@
 import "./PersonalInfoComponent.css";
+import { useForm } from "react-hook-form";
 import { Avatar, Button, Divider, Paper, Snackbar } from "@mui/material";
 import React, { useState, useEffect } from "react";
-import BackNextBtnComponent from "../BackNextBtn/BackNextBtnComponent";
-import InputComponent from "../Input/InputComponent";
 import { connect } from "react-redux";
 import Avatar1 from "react-avatar-edit";
 import { styled } from "@mui/material/styles";
@@ -12,8 +11,8 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
+import {BackNextBtnComponent,InputComponent} from "../../Pages/index";
 import { addPersonalInfo } from "../../Redux/Actions/actions";
-import { useForm } from "react-hook-form";
 
 const mapStateToProps = (state) => ({
   personalInfo: state.personalInfoReducer.personalInfo,

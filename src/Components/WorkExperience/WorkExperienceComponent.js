@@ -2,11 +2,9 @@ import "./WorkExperienceComponent.css";
 import React, {  useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { Button, Divider, MenuItem, Paper, Select } from "@mui/material";
-import BackNextBtnComponent from "../BackNextBtn/BackNextBtnComponent";
 import { connect } from "react-redux";
 import { addAllExperience, addExperience } from "../../Redux/Actions/actions";
-import InputComponent from "../Input/InputComponent";
-import SelectComponent from "../Select/SelectComponent";
+import {BackNextBtnComponent,SelectComponent,InputComponent} from "../../Pages/index";
 
 const mapStateToProps = (state) => ({
   experiences: state.workExperienceReducer.experiences,

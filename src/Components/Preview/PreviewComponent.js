@@ -1,10 +1,10 @@
-import { Button, CircularProgress, Container, TextField } from "@mui/material";
-import React, { useState } from "react";
 import "../Preview/PreviewComponent.css";
-import { connect } from "react-redux";
-import { templates } from "../../Utils/Data/templates";
+import React, { useState } from "react";
+import { Button, CircularProgress, Container, TextField } from "@mui/material";
 import JsPDF from "jspdf";
 import uniqid from "uniqid";
+import { connect } from "react-redux";
+import { templates } from "../../Utils/Data/templates";
 
 const mapStateToProps = (state) => ({
   selectedTemplateId: state.selectedTemplateReducer.selectedTemplateId,
@@ -26,6 +26,7 @@ const PreviewComponent = (props) => {
   const getTemplate = (template, index) => {
     // console.log("template.id ",template.id )
     if (template.id === props.selectedTemplateId) {
+// cloneElement lets you create a new React element using another element as a starting point.
       const TemplateComp = React.cloneElement(template.template, {
         personalinfo: props.personalInfo,
         workexperience: props.experiences,
