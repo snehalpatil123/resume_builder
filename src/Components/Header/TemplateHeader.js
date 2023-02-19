@@ -41,6 +41,7 @@ const TemplateHeader = (props) => {
           className="template-header-second">
           {props.personalInfo.address}<br/>
           {props.personalInfo.city} &nbsp;
+          {props.personalInfo.country} &nbsp;
           {props.personalInfo.postalCode}<br/>
           {props.personalInfo.mobile}<br/>
         </p>

@@ -14,7 +14,7 @@ const initialPersonalInfoState = {
     mobile: "",
     address: "",
     city: "",
-    state: "",
+    country: "",
     postalCode: "",
     objective: "",
   },

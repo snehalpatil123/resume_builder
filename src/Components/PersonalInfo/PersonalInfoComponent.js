@@ -146,7 +146,7 @@ const PersonalInfoComponent = (props) => {
   }, []);
 
   // const profileImg = sotreImage.map((ele) => ele.img);
-  // console.log(props.personalInfo, errors);
+  console.log(props.personalInfo, errors);
 
   return (
     <Paper className="personal-info-paper" elevation={3}>
@@ -294,15 +294,15 @@ const PersonalInfoComponent = (props) => {
             name={"country"}
             register={register}
             multiline={false}
-            value={props.personalInfo.state}
+            value={props.personalInfo.country}
             setValue={(value) =>
               props.onAddPersonalInfo({
                 ...props.personalInfo,
-                state: value,
+                country: value,
               })
             }
-            error={errors.state ? true : false}
-            errorMessage={errors.state ? errors.state.message : null}
+            error={errors.country ? true : false}
+            errorMessage={errors.country ? errors.country.message : null}
           />
           <InputComponent
             title={"Postal Code"}
