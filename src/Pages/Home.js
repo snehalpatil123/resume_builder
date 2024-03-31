@@ -17,7 +17,7 @@ const mapDispatchToProps = (dispatch) => ({
   setSelectedTemplateId: (id) => dispatch(selectTemplate(id)),
 });
 
-const Home = (props) => {
+const HomePage = (props) => {
   const navigate = useNavigate();
 
   const navigateToFillDetails = (id) => {
@@ -88,4 +88,4 @@ const Home = (props) => {
   );
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
